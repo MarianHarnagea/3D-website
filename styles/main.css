@@ -192,15 +192,20 @@ canvas {
 
 .page-overlay .page-content .text-container h1 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 8px;
   opacity: 0;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 
-.page-overlay .page-content .text-container .title1,
-.page-overlay .page-content .text-container .title2,
-.page-overlay .page-content .text-container .title3 {
+.page-overlay .page-content .text-container .container-overflow {
+  overflow-y: hidden;
+}
+
+.page-overlay .page-content .text-container .container-overflow .title1,
+.page-overlay .page-content .text-container .container-overflow .title2,
+.page-overlay .page-content .text-container .container-overflow .title3 {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 3px;
@@ -208,15 +213,15 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  .page-overlay .page-content .text-container .title1,
-  .page-overlay .page-content .text-container .title2,
-  .page-overlay .page-content .text-container .title3 {
+  .page-overlay .page-content .text-container .container-overflow .title1,
+  .page-overlay .page-content .text-container .container-overflow .title2,
+  .page-overlay .page-content .text-container .container-overflow .title3 {
     font-size: 3.5rem;
     font-weight: 500;
   }
 }
 
-.page-overlay .page-content .text-container p {
+.page-overlay .page-content .text-container .container-overflow p {
   font-size: 0.8rem;
   letter-spacing: 1px;
   line-height: 1.5rem;
@@ -229,7 +234,7 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  .page-overlay .page-content .text-container p {
+  .page-overlay .page-content .text-container .container-overflow p {
     font-size: 1rem;
     line-height: 2rem;
   }

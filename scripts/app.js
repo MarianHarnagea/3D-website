@@ -130,7 +130,7 @@ ts.forEach((t) => {
 observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `h2SlideIn 1.5s ${entry.target.dataset.delay} cubic-bezier(0.19, 1, 0.22, 1) forwards`;
+      entry.target.style.animation = `h2SlideIn 1s ${entry.target.dataset.delay} cubic-bezier(0.19, 1, 0.22, 1) forwards`;
     } else {
       entry.target.style.animation = "none";
     }
@@ -144,7 +144,7 @@ titles.forEach((title) => {
 observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `pSlideIn 1.5s ${entry.target.dataset.delay} cubic-bezier(0.19, 1, 0.22, 1) forwards `;
+      entry.target.style.animation = `pSlideIn 2s ${entry.target.dataset.delay} cubic-bezier(0.19, 1, 0.22, 1) forwards `;
     } else {
       entry.target.style.animation = "none";
     }
